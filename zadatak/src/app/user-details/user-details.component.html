@@ -1,0 +1,55 @@
+<div>
+    <input type="button" class="button" value="Edit" >
+    <input type="button" class="button" value="Add User"[routerLink]="['/add-user']">
+    <input type="button" class="button" value="Logout" (click)="logout()">
+ </div> 
+<p>
+  user-details 
+</p>
+<p>
+  Username: {{ user.username }} 
+</p>
+<p>
+  First Name: {{ user.first_name }} 
+</p>
+<p>
+  Last Name: {{ user.last_name }} 
+</p>
+<p>
+  Address: {{ user.adress }} 
+</p>
+<p>
+  Zip code: {{ user.area_code }} 
+</p>
+<p>
+  City: {{ user.city }} 
+</p>
+<!-- <div>
+  <label>User Name
+    <input type="text" formControlName="name">
+  </label>
+
+  <label>Name
+    <input type="text"  formControlName="text">
+  </label>
+
+  <label>Surname
+    <input type="text" formControlName="surname">
+  </label>
+
+  <label>Adress
+    <input type="text"  formControlName="adress">
+  </label>
+
+  <label>Postal Code
+    <input type="text" formControlName="pcode">
+  </label>
+
+  <label>City
+    <input type="text"  formControlName="city">
+  </label>
+</div>
+<div> 
+  <input type="submit" class="button" value="Edit">
+  <input type="submit" class="button" value="Add User">
+</div> -->

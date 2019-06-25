@@ -1,0 +1,33 @@
+<p>
+  add-user!
+</p>
+<form [formGroup]="addUserForm" (ngSubmit)="onSubmit(addUserForm.value)">
+<div>
+    <label>Username
+      <input type="text" formControlName="username">
+    </label>
+  
+    <label>First Name
+      <input type="text"  formControlName="first_name">
+    </label>
+  
+    <label>Last Name
+      <input type="text" formControlName="last_name">
+    </label>
+  
+    <label>Adress
+      <input type="text"  formControlName="adress">
+    </label>
+  
+    <label>Postal Code
+      <input type="text" formControlName="area_code">
+    </label>
+  
+    <label>City
+      <input type="text"  formControlName="city">
+    </label>
+  </div>
+  <div> 
+      <input type="submit" class="button" value="Submit">
+  </div>
+</form>

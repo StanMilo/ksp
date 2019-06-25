@@ -1,0 +1,29 @@
+<div *ngIf="!name; else forminfo">
+  <form [formGroup]="userLoginForm" (ngSubmit)="onSubmit(userLoginForm.value)">
+    <div class="form-container">
+      <div class="row columns">
+        <h3>Enter user name and password</h3>
+        <label>Name
+          <input type="text" formControlName="name">
+        </label>
+
+        <label>password
+          <input type="password"  formControlName="password">
+        </label>
+        <!-- [routerLink]="['/details']" -->
+        <input type="submit" class="button expanded"  value="Submit Form" [disabled]="!userLoginForm.valid">
+      </div>
+    </div>
+  </form>
+</div>
+<router-outlet></router-outlet>
+
+<ng-template #forminfo>
+  <div class="form-container">
+    <div class="row columns">
+        <h1>{{ name }}</h1>
+
+        <p>{{ password }}</p>
+    </div>
+  </div>
+</ng-template>
